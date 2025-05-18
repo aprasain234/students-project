@@ -32,7 +32,7 @@ pipeline {
 
         stage('Run Container (optional)') {
             steps {
-                sh 'docker run -d -p 8080:8080 $IMAGE_NAME:$TAG'
+                sh 'docker run -d -p 8081:8080 $IMAGE_NAME:$TAG'
             }
         }
     }
